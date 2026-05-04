@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 
@@ -88,9 +89,9 @@ export default function Merch() {
 
           {/* Back to Evidence */}
           <div className="mt-8">
-            <a href="/characters" className="text-primary hover:text-primary/80 font-georgia font-bold">
+            <Link href="/characters" className="text-primary hover:text-primary/80 font-georgia font-bold no-underline">
               ← Back to Case Files
-            </a>
+            </Link>
           </div>
         </div>
       </main>

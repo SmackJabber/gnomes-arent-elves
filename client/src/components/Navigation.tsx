@@ -10,29 +10,27 @@ export default function Navigation() {
     <nav className="bg-primary text-primary-foreground sticky top-0 z-50 border-b-4 border-accent shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo/Brand */}
-        <Link href="/">
-          <a className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="text-3xl font-georgia font-bold">🧙</div>
-            <div className="hidden sm:block">
-              <h1 className="font-georgia text-xl font-bold">Gnomes Aren't Elves</h1>
-              <p className="text-xs opacity-80">The Truth Revealed</p>
-            </div>
-          </a>
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <div className="text-3xl font-georgia font-bold">🧙</div>
+          <div className="hidden sm:block">
+            <h1 className="font-georgia text-xl font-bold">Gnomes Aren't Elves</h1>
+            <p className="text-xs opacity-80">The Truth Revealed</p>
+          </div>
         </Link>
 
         {/* Navigation Links */}
         <div className="flex items-center gap-2 sm:gap-4">
-          <Link href="/about">
+          <Link href="/about" className="no-underline">
             <Button variant="ghost" className="text-primary-foreground hover:bg-primary/80 font-georgia font-bold">
               Evidence
             </Button>
           </Link>
-          <Link href="/characters">
+          <Link href="/characters" className="no-underline">
             <Button variant="ghost" className="text-primary-foreground hover:bg-primary/80 font-georgia font-bold">
               Files
             </Button>
           </Link>
-          <Link href="/merch">
+          <Link href="/merch" className="no-underline">
             <Button variant="ghost" className="text-primary-foreground hover:bg-primary/80 font-georgia font-bold">
               Merch
             </Button>

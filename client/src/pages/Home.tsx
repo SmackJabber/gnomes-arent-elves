@@ -47,12 +47,12 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/about">
+            <Link href="/about" className="no-underline">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
                 Read the Evidence
               </Button>
             </Link>
-            <Link href="/characters">
+            <Link href="/characters" className="no-underline">
               <Button size="lg" variant="outline" className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-bold">
                 View the Files
               </Button>

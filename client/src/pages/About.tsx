@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 /**
@@ -136,9 +137,9 @@ export default function About() {
             <p className="mb-6">
               Once you see it, you cannot unsee it. Explore the individual case files to examine the evidence for each character.
             </p>
-            <a href="/characters" className="inline-block bg-primary text-primary-foreground px-6 py-3 font-bold hover:bg-primary/90 transition-colors">
+            <Link href="/characters" className="inline-block bg-primary text-primary-foreground px-6 py-3 font-bold hover:bg-primary/90 transition-colors no-underline">
               View Character Files →
-            </a>
+            </Link>
           </div>
         </div>
       </main>
