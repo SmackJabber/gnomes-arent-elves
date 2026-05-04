@@ -2,7 +2,7 @@
 
 [build]
   command = "pnpm build"
-  publish = "dist"
+  publish = "dist/public"
 
 [[redirects]]
   from = "/*"
@@ -11,12 +11,12 @@
 
 [context.production]
   command = "pnpm build"
-  publish = "dist"
+  publish = "dist/public"
 
 [context.deploy-preview]
   command = "pnpm build"
-  publish = "dist"
+  publish = "dist/public"
 
 [context.branch-deploy]
   command = "pnpm build"
-  publish = "dist"
+  publish = "dist/public"
