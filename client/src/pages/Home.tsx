@@ -34,15 +34,15 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="font-georgia text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="font-georgia text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
             Gnomes Aren't Elves
           </h1>
 
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 font-georgia italic">
+          <p className="text-xl md:text-2xl text-white mb-8 font-georgia italic" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.5)'}}>
             The Truth They Don't Want You to Know
           </p>
 
-          <p className="text-lg text-foreground/70 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-white mb-12 max-w-2xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.4)'}}>
             For decades, popular culture has perpetuated a grand deception. The Keebler Elf, Snap, Crackle, Pop, and even Santa's workshop helpers have been systematically misidentified. We have the evidence. We have the proof. These are not elves—they are gnomes.
           </p>
 
