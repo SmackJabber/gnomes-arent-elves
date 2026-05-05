@@ -27,7 +27,12 @@ export default function Navigation() {
           </Link>
           <Link href="/characters" className="no-underline">
             <Button variant="ghost" className="text-primary-foreground hover:bg-primary/80 font-georgia font-bold">
-              Files
+              Cases
+            </Button>
+          </Link>
+          <Link href="/advocacy" className="no-underline">
+            <Button variant="ghost" className="text-primary-foreground hover:bg-primary/80 font-georgia font-bold">
+              Advocacy
             </Button>
           </Link>
           <Link href="/merch" className="no-underline">

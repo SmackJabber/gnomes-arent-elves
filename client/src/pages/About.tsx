@@ -2,143 +2,156 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 /**
- * About page - Educational content explaining gnome vs. elf distinctions
- * Design: Vintage conspiracy aesthetic with document-style layout
+ * About page - Academic research on gnome classification, culture, and exploitation
+ * Dr. C, PhD in Gnomeology
  */
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navigation />
 
-      <main className="flex-1 max-w-4xl mx-auto px-4 py-12 w-full">
-        {/* Page Header */}
-        <div className="mb-12">
-          <div className="inline-block border-4 border-accent px-4 py-2 mb-6 bg-card">
-            <p className="text-accent font-bold text-xs tracking-widest uppercase">EVIDENCE REPORT</p>
+      <main className="flex-1 px-4 py-12">
+        <div className="max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="font-georgia text-5xl font-bold text-foreground mb-4">
+              Gnomological Research
+            </h1>
+            <p className="text-xl text-foreground/70 font-georgia italic">
+              A Comprehensive Study of Gnome Classification, Culture, and Exploitation
+            </p>
+            <p className="text-lg text-foreground/60 mt-4">
+              By Dr. C, PhD in Gnomeology
+            </p>
           </div>
-          <h1 className="font-georgia text-5xl font-bold text-foreground mb-4">
-            The Gnome vs. Elf Distinction
-          </h1>
-          <p className="text-lg text-foreground/70 font-georgia italic">
-            A comprehensive analysis of folklore, characteristics, and the misidentification of popular culture icons
-          </p>
-        </div>
 
-        {/* Content Sections */}
-        <div className="space-y-12">
-          {/* Section 1: Folklore Differences */}
-          <section className="bg-card p-8 border-l-4 border-primary">
-            <h2 className="font-georgia text-3xl font-bold text-primary mb-4">
-              Folklore & Historical Distinctions
+          {/* Introduction */}
+          <section className="mb-12 bg-card border-4 border-primary p-8">
+            <h2 className="font-georgia text-3xl font-bold text-foreground mb-4">
+              Introduction
             </h2>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                In traditional European folklore, gnomes and elves represent fundamentally different supernatural beings. These distinctions have been documented across centuries and multiple cultures.
-              </p>
-              <p>
-                <strong className="text-foreground">Elves</strong> in classical folklore are ethereal, magical beings—often described as forest spirits with pointed ears, immortal nature, and connection to the fae realm. They are otherworldly, mysterious, and associated with magic and enchantment.
-              </p>
-              <p>
-                <strong className="text-foreground">Gnomes</strong>, by contrast, are earthbound humanoids. They are typically depicted as small, sturdy creatures with beards and pointed hats, living in gardens, forests, and underground. They are industrious, practical, and connected to the physical world—not the mystical realm.
-              </p>
-            </div>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              For centuries, gnomes have been systematically misclassified, stereotyped, and exploited across multiple cultures and mythological traditions. This research demonstrates that what popular culture identifies as "elves," "leprechauns," and even "dwarves" are, in fact, distinct gnome cultures and races—each with their own sophisticated social structures, crafting traditions, and unfortunately, histories of enslavement.
+            </p>
+            <p className="text-foreground/80 leading-relaxed">
+              The purpose of this study is to establish accurate gnomological classification and to document the widespread exploitation of gnomes in contemporary consumer culture.
+            </p>
           </section>
 
-          {/* Section 2: Physical Characteristics */}
-          <section className="bg-card p-8 border-l-4 border-accent">
-            <h2 className="font-georgia text-3xl font-bold text-accent mb-4">
-              Physical Characteristics
+          {/* Gnome Classification */}
+          <section className="mb-12 bg-card border-4 border-primary p-8">
+            <h2 className="font-georgia text-3xl font-bold text-foreground mb-6">
+              Gnome Classification & Races
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-georgia text-xl font-bold text-foreground mb-3">Gnome Features</h3>
-                <ul className="space-y-2 text-foreground/80">
-                  <li>✓ Pointed, conical hat (red or green)</li>
-                  <li>✓ Long beard (often white or gray)</li>
-                  <li>✓ Short stature (typically 2-3 feet tall)</li>
-                  <li>✓ Stocky, robust build</li>
-                  <li>✓ Round nose and rosy cheeks</li>
-                  <li>✓ Practical, work-oriented clothing</li>
-                </ul>
+
+            <div className="space-y-8">
+              <div className="border-l-4 border-accent pl-6">
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-2">
+                  Standard Gnomes (Including Leprechauns)
+                </h3>
+                <p className="text-foreground/80 leading-relaxed mb-3">
+                  The most widely distributed gnome population. Leprechauns are not a separate race but rather standard gnomes with distinct cultural practices and regional variations. Common misconceptions about leprechauns—including stereotypes about excessive greed and distinctive top hat fashion—represent bigoted mischaracterizations of gnome culture.
+                </p>
+                <p className="text-foreground/80 leading-relaxed">
+                  While many leprechauns are benevolent philanthropists contributing positively to their communities, others exhibit malicious behavior. This diversity reflects the complexity of gnome society rather than any inherent racial characteristic.
+                </p>
               </div>
-              <div>
-                <h3 className="font-georgia text-xl font-bold text-foreground mb-3">Elf Features</h3>
-                <ul className="space-y-2 text-foreground/80">
-                  <li>✗ Pointed ears (not hat)</li>
-                  <li>✗ Often beardless or minimal facial hair</li>
-                  <li>✗ Typically taller and more slender</li>
-                  <li>✗ Graceful, ethereal build</li>
-                  <li>✗ Delicate, angular features</li>
-                  <li>✗ Magical, ornate clothing</li>
-                </ul>
+
+              <div className="border-l-4 border-accent pl-6">
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-2">
+                  Mythological Dwarves (Dwarven Gnomes)
+                </h3>
+                <p className="text-foreground/80 leading-relaxed mb-3">
+                  A specific subspecies of gnome, typically characterized by greater stature than standard gnomes. Despite physical differences, dwarven gnomes share the fundamental traits common to all gnomes: exceptional aptitude for craftsmanship, manual labor, and underground dwelling.
+                </p>
+                <p className="text-foreground/80 leading-relaxed">
+                  Dwarven gnomes maintain sophisticated underground burrow systems, often constructed beneath hollowed logs and natural formations. Their crafting traditions rival or exceed those of other gnome populations.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-accent pl-6">
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-2">
+                  Other Gnome Cultures
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Multiple additional gnome cultures exist across various geographic and mythological contexts. Further research and documentation are ongoing to establish comprehensive classification of all gnome populations.
+                </p>
               </div>
             </div>
           </section>
 
-          {/* Section 3: Behavioral Patterns */}
-          <section className="bg-card p-8 border-l-4 border-primary">
-            <h2 className="font-georgia text-3xl font-bold text-primary mb-4">
-              Behavioral & Cultural Patterns
+          {/* Gnome Society & Social Structure */}
+          <section className="mb-12 bg-card border-4 border-primary p-8">
+            <h2 className="font-georgia text-3xl font-bold text-foreground mb-6">
+              Gnome Society & Social Structure
             </h2>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                The behavior and cultural practices of gnomes align perfectly with the characters we see in popular culture, while elf characteristics do not.
-              </p>
-              <p>
-                <strong className="text-foreground">Gnomes are:</strong> Industrious craftspeople who work with their hands. They build, create, and maintain. They are practical, organized, and focused on tangible results. They live in communities and work cooperatively on projects. They have a "blue-collar" approach to existence.
-              </p>
-              <p>
-                <strong className="text-foreground">Elves are:</strong> Magical, often solitary or in small groups. They are associated with nature magic, music, and the mystical arts. They are immortal and operate on a different plane of existence than humans. They are rarely depicted as factory workers or cookie makers.
-              </p>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-3">
+                  Facial Hair & Social Status
+                </h3>
+                <p className="text-foreground/80 leading-relaxed mb-3">
+                  In gnome culture, facial hair serves as a critical indicator of social status and freedom:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-foreground/80 ml-4">
+                  <li><strong>Bearded gnomes</strong> represent free gnomes, typically holding positions of authority, leadership, or independent status</li>
+                  <li><strong>Clean-shaven gnomes</strong> indicate enslaved or subjugated gnomes, stripped of autonomy and forced into servitude</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-3">
+                  Hat Hierarchy & Career Structure
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  The height and color of a gnome's hat directly correlate to their profession and skill level within that profession. This system allows for quick identification of expertise and specialization within gnome communities.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-3">
+                  Craftsmanship & Labor
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  All gnome races possess exceptional aptitude for manual labor and craftsmanship. This universal trait has made gnomes targets for exploitation, as their skills are highly valued by those who would enslave them.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-georgia text-2xl font-bold text-foreground mb-3">
+                  Dwelling & Architecture
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Most gnomes prefer underground burrow systems, often constructed beneath hollowed logs and natural geological formations. These dwellings reflect sophisticated architectural knowledge and engineering capabilities.
+                </p>
+              </div>
             </div>
           </section>
 
-          {/* Section 4: The Misidentification */}
-          <section className="bg-card p-8 border-l-4 border-accent">
-            <h2 className="font-georgia text-3xl font-bold text-accent mb-4">
-              Why the Misidentification Occurred
+          {/* Gnome Society: Complexity & Brutality */}
+          <section className="mb-12 bg-card border-4 border-primary p-8">
+            <h2 className="font-georgia text-3xl font-bold text-foreground mb-4">
+              The Complexity of Gnome Society
             </h2>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
-              <p>
-                The term "elf" has been used colloquially in modern marketing and popular culture to describe small, magical helpers. However, this represents a fundamental misunderstanding of folklore taxonomy. Marketing departments chose "elf" for its whimsical connotations, not for its folkloric accuracy.
-              </p>
-              <p>
-                In reality, these characters—the cookie-making helpers, the cereal mascots, Santa's workshop assistants—all exhibit gnome characteristics: pointed hats, beards, industrious work ethic, and earthbound practicality. The evidence is overwhelming.
-              </p>
-            </div>
-          </section>
-
-          {/* Section 5: Supporting Evidence */}
-          <section className="bg-card p-8 border-l-4 border-primary">
-            <h2 className="font-georgia text-3xl font-bold text-primary mb-4">
-              Supporting Evidence
-            </h2>
-            <div className="space-y-3 text-foreground/80">
-              <p className="font-bold text-foreground">Visual Analysis:</p>
-              <p>
-                Examine the Keebler Elf, Snap, Crackle, and Pop, and Santa's workshop helpers. Every single one wears a pointed hat—a defining gnome characteristic. None have pointed ears. This is not coincidence; it is evidence.
-              </p>
-              <p className="font-bold text-foreground mt-4">Occupational Analysis:</p>
-              <p>
-                Gnomes are known for craftsmanship and industrious work. Cookie making, cereal production, toy manufacturing—these are gnome professions. Elves, in contrast, are associated with magic and nature, not factory work.
-              </p>
-              <p className="font-bold text-foreground mt-4">Behavioral Analysis:</p>
-              <p>
-                These characters work in organized groups, follow instructions, and produce tangible goods. This is gnome behavior. Elves are typically depicted as independent, magical, and otherworldly.
-              </p>
-            </div>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Gnome society, like all complex civilizations, exhibits both benevolence and brutality. Historical records and contemporary observations demonstrate that gnome cultures can be sophisticated yet occasionally backwards in their practices. Slavery, exploitation, and systemic oppression have been documented across multiple gnome populations and historical periods.
+            </p>
+            <p className="text-foreground/80 leading-relaxed">
+              Understanding this complexity is essential to accurate gnomological scholarship and to advocating for gnome rights and liberation.
+            </p>
           </section>
 
           {/* Call to Action */}
           <div className="bg-accent text-accent-foreground p-8 border-4 border-primary text-center">
             <p className="font-georgia text-2xl font-bold mb-4">
-              The Truth is Undeniable
+              Understanding Gnome Exploitation
             </p>
             <p className="mb-6">
-              Once you see it, you cannot unsee it. Explore the individual case files to examine the evidence for each character.
+              Explore specific case studies of enslaved gnomes in contemporary popular culture and learn about the systematic exploitation that continues today.
             </p>
             <Link href="/characters" className="inline-block bg-primary text-primary-foreground px-6 py-3 font-bold hover:bg-primary/90 transition-colors no-underline">
-              View Character Files →
+              View Case Studies →
             </Link>
           </div>
         </div>

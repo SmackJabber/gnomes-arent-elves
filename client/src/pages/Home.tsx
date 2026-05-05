@@ -38,9 +38,11 @@ export default function Home() {
             Gnomes Aren't Elves
           </h1>
 
-          <p className="text-xl md:text-2xl text-white mb-8 font-georgia italic" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.5)'}}>
-            The Truth They Don't Want You to Know
+          <p className="text-xl md:text-2xl text-white mb-2 font-georgia italic" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.5)'}}>
+            A Comprehensive Study in Gnomology
           </p>
+
+          <p className="text-lg text-white mb-8 font-georgia" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.4)'}}>By Dr. C, PhD in Gnomeology</p>
 
           <p className="text-lg text-white mb-12 max-w-2xl mx-auto leading-relaxed" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.4)'}}>
             For decades, popular culture has perpetuated a grand deception. The Keebler Elf, Snap, Crackle, Pop, and even Santa's workshop helpers have been systematically misidentified. We have the evidence. We have the proof. These are not elves—they are gnomes.
